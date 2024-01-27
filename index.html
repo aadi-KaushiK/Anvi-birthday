@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Scrapbook</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #timeline {
+      display: none; /* Hide the timeline initially */
+    }
+    .photo-container {
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    .photo {
+      border: 2px solid rgb(2, 0, 0);
+      border-radius: 5px;
+      width: 200px; /* Set the width of the photo */
+      height: 200px; /* Set the height of the photo */
+      display: block;
+      margin: 0 auto;
+    }
+
+    .description {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .message-box {
+      margin-top: 20px;
+      width: 60%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    .navigation {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .navigation button {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="title-screen">
+    <h1>Happy birthday Meri Jaan</h1>
+    <p>Aao Anvi se Avuu tak ka safar dekhe.</p>
+    <button id="start-button">Start</button>
+  </div>
+  <div id="timeline"></div>
+  <div id="scrapbook" style="display: none;">
+    <div class="Chapter1">
+      <h1>The Beginning</h1>
+      <div class="photo-container">
+        <img src="./1(-).jpg" alt="Photo 1" class="photo">
+        <p class="description">The universe began, scientists believe, with every speck of its energy jammed into a very tiny point. This extremely dense point exploded with unimaginable force, creating matter and propelling it outward to make the billions of galaxies of our vast universe. Astrophysicists dubbed this titanic explosion the Big Bang.</p>
+
+      </div>
+      <div class="navigation">
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+    <div class="Chapter2" style="display: none;">
+      <h1>Our Past</h1>
+      <div class="photo-container">
+        <img src="./2(-).jpg" alt="Photo 2" class="photo">
+        <p class="description">The time when Anvi was just a classmate friend,rarely used to talk.Spent 2 years without knowing each other that well.Yepp kind of boring phase of our relation since it did not start yet.Far from Avvuu,Anvi was Aap(as in a pronoun)</p>
+
+      </div>
+      <div class="navigation">
+        <button id="prev-page">Previous</button>
+        <button id="next-page-2">Next</button>
+      </div>
+    </div>
+    <div class="Chapter3" style="display: none;">
+      <h1>Our Beginning</h1>
+      <div class="photo-container">
+        <img src="./1.jpg" alt="Photo 3" class="photo">
+        <p class="description">All of a sudden in June,2023.we went to a camp together.This is where it all started,when anvi started liking me,On the epic day and the most memorable day of that year (6 June 2023) Anvi called me and proposed.Then it all began,Anvi now became tum(also a pronoun)</p>
+
+
+      </div>
+      <div class="navigation">
+        <button id="prev-page-2">Previous</button>
+        <button id="next-page-3">Next</button>
+      </div>
+    </div>
+    <div class="Chapter4" style="display: none;">
+      <h1>Into LDR</h1>
+      <div class="photo-container">
+        <img src="./3.jpg" alt="Photo 4" class="photo">
+        <p class="description">After the camp ended,we meet once for only 1 hour and then couldn't as I got posted out to Delhi,as much as we were new to the relation utna hi new to LDR,love was still increasing day by day.Rarely found time to voice call,and then one day both of us,coincidently got alone together and this happened to be our first video call.Anvi still tum but in a more lovable manner</p>
+
+
+      </div>
+      <div class="navigation">
+        <button id="prev-page-3">Previous</button>
+        <button id="next-page-4">Next</button>
+      </div>
+    </div>
+
+      <div class="Chapter5" style="display: none;">
+        <h1>Deep in LDR</h1>
+        <div class="photo-container">
+          <img src="./2.jpg" alt="Photo 5" class="photo">
+          <p class="description">This time now, video calling was a daily habit.Talks till late 3-4o'clock in the night.The picture shows one such day which happened to be my birthday.had more fun in the call than the whole day.Got the hang of LDR but wanted to meet now.Anvi, now became food dishes(new one everyday)</p>
+  
+  
+        </div>
+        <div class="navigation">
+          <button id="prev-page-4">Previous</button>
+          <button id="next-page-5">Next</button>
+        </div>
+
+      </div>
+
+      <div class="Chapter6" style="display: none;">
+        <h1>The planned day </h1>
+        <div class="photo-container">
+          <img src="./4.jpg" alt="Photo 3" class="photo">
+          <p class="description">After some months in the relation,desprate to see each other.Got the perfect opputunity.I can write a whole novel on this day but whoever is reading understands my feelings.Anvi,on the path to become Avuu</p>
+
+  
+  
+        </div>
+        <div class="navigation">
+          <button id="prev-page-5">Previous</button>
+          <button id="next-page-6">Next</button>
+        </div>
+
+      </div>
+      <div class="Chapter7" style="display: none;">
+        <h1>The Unplanned day </h1>
+        <div class="photo-container">
+          <p class="description">No photos clicked </p>
+          <p class="description">we meet almost 27 days ago,Anvi had again come to Delhi.We had zero scope of meeting,but at the last moment decided to do something.Got on the bike(gharwalo ko bola ice-cream lekee aaya)and flew to south-ex.Meet her and her parents for about 4-5 mins and then back home.Love makes you do things.Anvi,almost now Avuu </p>
+  
+  
+        </div>
+        <div class="navigation">
+          <button id="prev-page-6">Previous</button>
+          <button id="next-page-7">Next</button>
+        </div>
+
+      </div>
+      <div class="Chapter8" style="display: none;">
+        <h1>Anvi's birthday</h1>
+        <div class="photo-container">
+          <p class="description">Anvi, now Avuuuu</p>
+          <p class="description">Happy birthday Avuuu,i hope you liked this(muahhh)</p>
+  
+  
+        </div>
+        <div class="navigation">
+          <button id="prev-page-7">Previous</button>
+          <button id="next-page-8">Next</button>
+        </div>
+
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#timeline').hide();
+
+      $('#start-button').click(function() {
+        $('#title-screen').hide();
+        $('#scrapbook').show();
+        $('#timeline').show();
+        $('.Chapter1').show();
+      });
+
+      $('#next-page').click(function() {
+        $('.Chapter1').hide();
+        $('.Chapter2').show();
+      });
+
+      $('#prev-page').click(function() {
+        $('.Chapter2').hide();
+        $('.Chapter1').show();
+      });
+
+      $('#next-page-2').click(function() {
+        $('.Chapter2').hide();
+        $('.Chapter3').show();
+      });
+
+      $('#prev-page-2').click(function() {
+        $('.Chapter3').hide();
+        $('.Chapter2').show();
+      });
+
+      $('#next-page-3').click(function() {
+        $('.Chapter3').hide();
+        $('.Chapter4').show();
+      });
+
+      $('#prev-page-3').click(function() {
+        $('.Chapter4').hide();
+        $('.Chapter3').show();
+      });
+      $('#next-page-4').click(function() {
+        $('.Chapter4').hide();
+        $('.Chapter5').show();
+      });
+
+      $('#prev-page-4').click(function() {
+        $('.Chapter5').hide();
+        $('.Chapter4').show();
+      });
+      $('#next-page-5').click(function() {
+        $('.Chapter5').hide();
+        $('.Chapter6').show();
+      });
+
+      $('#prev-page-5').click(function() {
+        $('.Chapter6').hide();
+        $('.Chapter5').show();
+      });
+      $('#next-page-6').click(function() {
+        $('.Chapter6').hide();
+        $('.Chapter7').show();
+      });
+
+      $('#prev-page-6').click(function() {
+        $('.Chapter7').hide();
+        $('.Chapter6').show();
+      });
+      $('#next-page-7').click(function() {
+        $('.Chapter7').hide();
+        $('.Chapter8').show();
+      });
+
+      $('#prev-page-7').click(function() {
+        $('.Chapter8').hide();
+        $('.Chapter7').show();
+      });
+    });
+  </script>
+</body>
+</html>
